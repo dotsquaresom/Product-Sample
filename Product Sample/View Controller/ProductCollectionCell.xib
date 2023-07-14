@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ProductCollectionCell" customModule="Product_Sample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="191" height="256"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="191" height="256"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pac-39-ZTr" customClass="MyView" customModule="Product_Sample" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="191" height="256"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PgN-J5-ijG" customClass="MyImageView" customModule="Product_Sample" customModuleProvider="target">
+                                <rect key="frame" x="8" y="8" width="175" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="rgN-Qy-16P"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadious">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l6j-5a-3hN">
+                                <rect key="frame" x="8" y="136" width="175" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="ejc-f4-0xL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JEs-QF-QUv">
+                                <rect key="frame" x="8" y="160" width="83.666666666666671" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="ofC-oE-tJY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="brand" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="dNu-qa-Evg">
+                                <rect key="frame" x="99.666666666666686" y="160" width="83.333333333333314" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="0C5-PV-0hv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                <color key="textColor" systemColor="systemPinkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VTa-6n-BqQ">
+                                <rect key="frame" x="8" y="184" width="175" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="RVL-ui-idF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="11"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="9Nm-s0-z3J">
+                                <rect key="frame" x="23" y="216" width="160" height="24"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gUT-Q8-8Zv" customClass="ResponsiveButton" customModule="Product_Sample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="24"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="GSH-8t-Omy"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Add"/>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xKp-hO-dwe" customClass="MyView" customModule="Product_Sample" customModuleProvider="target">
+                                        <rect key="frame" x="70" y="0.0" width="90" height="24"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="74T-o1-OHX">
+                                                <rect key="frame" x="0.0" y="0.0" width="90" height="24"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sex-1o-bU7" customClass="ResponsiveButton" customModule="Product_Sample" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="30" height="24"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                        <inset key="titleEdgeInsets" minX="0.0" minY="-5" maxX="0.0" maxY="0.0"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="-"/>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="553-bF-B4Q">
+                                                        <rect key="frame" x="30" y="0.0" width="30" height="24"/>
+                                                        <color key="backgroundColor" red="0.69384711980000002" green="0.82263678309999999" blue="0.21003314849999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="df1-kO-QUd" customClass="ResponsiveButton" customModule="Product_Sample" customModuleProvider="target">
+                                                        <rect key="frame" x="60" y="0.0" width="30" height="24"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                                        <inset key="titleEdgeInsets" minX="0.0" minY="-5" maxX="0.0" maxY="0.0"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="+"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="UfV-bf-Dw0"/>
+                                            <constraint firstAttribute="bottom" secondItem="74T-o1-OHX" secondAttribute="bottom" id="bhK-Bu-J32"/>
+                                            <constraint firstItem="74T-o1-OHX" firstAttribute="leading" secondItem="xKp-hO-dwe" secondAttribute="leading" id="k3u-Kz-oX0"/>
+                                            <constraint firstAttribute="trailing" secondItem="74T-o1-OHX" secondAttribute="trailing" id="uQP-yR-aXC"/>
+                                            <constraint firstAttribute="width" constant="90" id="wGX-Oz-DLH"/>
+                                            <constraint firstItem="74T-o1-OHX" firstAttribute="top" secondItem="xKp-hO-dwe" secondAttribute="top" id="wtI-ZE-679"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y40-MN-aqR" customClass="ResponsiveButton" customModule="Product_Sample" customModuleProvider="target">
+                                <rect key="frame" x="149" y="16" width="26" height="26"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="26" id="5Hj-Xs-niQ"/>
+                                    <constraint firstAttribute="width" secondItem="y40-MN-aqR" secondAttribute="height" id="5NW-8W-eAl"/>
+                                </constraints>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="-5" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <buttonConfiguration key="configuration" style="plain" image="checkmark.square" catalog="system"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dNu-qa-Evg" firstAttribute="centerY" secondItem="JEs-QF-QUv" secondAttribute="centerY" id="1GR-O1-dtv"/>
+                            <constraint firstItem="l6j-5a-3hN" firstAttribute="leading" secondItem="PgN-J5-ijG" secondAttribute="leading" id="2Iw-fc-v7N"/>
+                            <constraint firstItem="PgN-J5-ijG" firstAttribute="leading" secondItem="pac-39-ZTr" secondAttribute="leading" constant="8" id="4HE-gH-WFI"/>
+                            <constraint firstItem="dNu-qa-Evg" firstAttribute="leading" secondItem="JEs-QF-QUv" secondAttribute="trailing" constant="8" id="5Fm-gV-agw"/>
+                            <constraint firstItem="VTa-6n-BqQ" firstAttribute="trailing" secondItem="dNu-qa-Evg" secondAttribute="trailing" id="5Kl-8a-kdC"/>
+                            <constraint firstItem="JEs-QF-QUv" firstAttribute="leading" secondItem="l6j-5a-3hN" secondAttribute="leading" id="6ny-aQ-1SY"/>
+                            <constraint firstItem="y40-MN-aqR" firstAttribute="top" secondItem="pac-39-ZTr" secondAttribute="top" constant="16" id="CTc-VH-YDY"/>
+                            <constraint firstItem="VTa-6n-BqQ" firstAttribute="top" secondItem="JEs-QF-QUv" secondAttribute="bottom" constant="4" id="INv-30-2on"/>
+                            <constraint firstAttribute="trailing" secondItem="PgN-J5-ijG" secondAttribute="trailing" constant="8" id="P6L-hd-1hz"/>
+                            <constraint firstItem="JEs-QF-QUv" firstAttribute="top" secondItem="l6j-5a-3hN" secondAttribute="bottom" constant="4" id="S7v-fO-Ysc"/>
+                            <constraint firstItem="l6j-5a-3hN" firstAttribute="trailing" secondItem="PgN-J5-ijG" secondAttribute="trailing" id="cfA-WB-Pkz"/>
+                            <constraint firstItem="VTa-6n-BqQ" firstAttribute="leading" secondItem="JEs-QF-QUv" secondAttribute="leading" id="f1F-eD-NFF"/>
+                            <constraint firstItem="JEs-QF-QUv" firstAttribute="width" secondItem="dNu-qa-Evg" secondAttribute="width" id="fU6-AS-4t0"/>
+                            <constraint firstAttribute="trailing" secondItem="y40-MN-aqR" secondAttribute="trailing" constant="16" id="g9i-ja-ZoX"/>
+                            <constraint firstAttribute="bottom" secondItem="9Nm-s0-z3J" secondAttribute="bottom" constant="16" id="pdx-Q7-HDI"/>
+                            <constraint firstAttribute="trailing" secondItem="9Nm-s0-z3J" secondAttribute="trailing" constant="8" id="spp-uh-PNY"/>
+                            <constraint firstItem="l6j-5a-3hN" firstAttribute="top" secondItem="PgN-J5-ijG" secondAttribute="bottom" constant="8" id="tA4-E5-HjQ"/>
+                            <constraint firstItem="dNu-qa-Evg" firstAttribute="trailing" secondItem="l6j-5a-3hN" secondAttribute="trailing" id="tI3-s6-gyr"/>
+                            <constraint firstItem="PgN-J5-ijG" firstAttribute="top" secondItem="pac-39-ZTr" secondAttribute="top" constant="8" id="uAZ-b0-cR7"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadious">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="pac-39-ZTr" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="8vq-RG-6dG"/>
+                <constraint firstItem="pac-39-ZTr" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ZjG-XD-fVi"/>
+                <constraint firstAttribute="bottom" secondItem="pac-39-ZTr" secondAttribute="bottom" id="qlE-ye-9XK"/>
+                <constraint firstAttribute="trailing" secondItem="pac-39-ZTr" secondAttribute="trailing" id="zVE-nA-WAI"/>
+            </constraints>
+            <size key="customSize" width="191" height="256"/>
+            <connections>
+                <outlet property="BrandLbl" destination="dNu-qa-Evg" id="Zbj-8t-R0w"/>
+                <outlet property="DescLbl" destination="VTa-6n-BqQ" id="q5B-0Q-NmY"/>
+                <outlet property="ImgView" destination="PgN-J5-ijG" id="FGq-Aq-H3z"/>
+                <outlet property="MinusButton" destination="Sex-1o-bU7" id="tWh-FF-yp2"/>
+                <outlet property="PlusButton" destination="df1-kO-QUd" id="TaR-vC-9yW"/>
+                <outlet property="PriceLbl" destination="JEs-QF-QUv" id="33e-gb-GTE"/>
+                <outlet property="ProductValueLbl" destination="553-bF-B4Q" id="auS-h8-wui"/>
+                <outlet property="TitleLbl" destination="l6j-5a-3hN" id="Idq-S5-S4I"/>
+                <outlet property="addButton" destination="gUT-Q8-8Zv" id="BlN-ho-2aC"/>
+                <outlet property="checkButton" destination="y40-MN-aqR" id="z2A-3J-adi"/>
+                <outlet property="quantityView" destination="xKp-hO-dwe" id="70u-Gr-URs"/>
+            </connections>
+            <point key="canvasLocation" x="238.93129770992365" y="61.267605633802823"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="checkmark.square" catalog="system" width="128" height="114"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SuccessVC" customModule="Product_Sample" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="suceess" translatesAutoresizingMaskIntoConstraints="NO" id="7Bk-yl-1KB">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Vg-Zm-iSP" customClass="MyView" customModule="Product_Sample" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="666" width="414" height="70"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3lf-VO-Zad" customClass="MyButton" customModule="Product_Sample" customModuleProvider="target">
+                            <rect key="frame" x="8" y="8" width="398" height="54"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Thank You! Go Back"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadious">
+                                    <real key="value" value="12"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="BackButtonAction:" destination="-1" eventType="touchUpInside" id="Ca3-PE-gvY"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="3lf-VO-Zad" secondAttribute="trailing" constant="8" id="23I-JQ-q0b"/>
+                        <constraint firstAttribute="bottom" secondItem="3lf-VO-Zad" secondAttribute="bottom" constant="8" id="5os-8P-9Fq"/>
+                        <constraint firstItem="3lf-VO-Zad" firstAttribute="leading" secondItem="1Vg-Zm-iSP" secondAttribute="leading" constant="8" id="BeH-R9-Jfz"/>
+                        <constraint firstAttribute="height" constant="70" id="Lvd-tk-tbs"/>
+                        <constraint firstItem="3lf-VO-Zad" firstAttribute="top" secondItem="1Vg-Zm-iSP" secondAttribute="top" constant="8" id="hpd-pu-eVt"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadious">
+                            <real key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Success! Your order has been placed successfully." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jav-vb-pRS">
+                    <rect key="frame" x="20" y="272.66666666666669" width="374" height="191"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="40"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Jav-vb-pRS" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0x6-78-k0J"/>
+                <constraint firstItem="1Vg-Zm-iSP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="8f2-4o-uhB"/>
+                <constraint firstAttribute="trailing" secondItem="1Vg-Zm-iSP" secondAttribute="trailing" id="ExF-i5-iUt"/>
+                <constraint firstItem="7Bk-yl-1KB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="KeS-Bf-lUM"/>
+                <constraint firstItem="Jav-vb-pRS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="LPV-jj-1nJ"/>
+                <constraint firstItem="Jav-vb-pRS" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="OGh-Ax-39n"/>
+                <constraint firstAttribute="bottom" secondItem="7Bk-yl-1KB" secondAttribute="bottom" id="SYS-yA-m8f"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="1Vg-Zm-iSP" secondAttribute="bottom" id="tKV-7I-R05"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Jav-vb-pRS" secondAttribute="trailing" constant="20" id="tVY-qK-6P8"/>
+                <constraint firstItem="7Bk-yl-1KB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="uPO-9T-2z2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7Bk-yl-1KB" secondAttribute="trailing" id="wOz-GS-bOv"/>
+            </constraints>
+            <point key="canvasLocation" x="130.53435114503816" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="suceess" width="681" height="1280"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
